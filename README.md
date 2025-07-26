@@ -3,7 +3,7 @@
 
 ## 🌐 Live Demo
 
-[🔗 View Live App](#) – *(Add your deployed site link here)*
+👉 [Try the Website](https://what-should-i-wear-today-inky.vercel.app/)
 
 ---
 
@@ -53,9 +53,9 @@ To run this project locally:
 
 1. **Clone the repository:**
 
-   ```bash
-   git clone https://github.com/yourusername/weather-outfit-app.git
-   cd weather-outfit-app
+```bash
+git clone https://github.com/Samarthgoyal51/What-Should-I-Wear-Today.git
+cd What-Should-I-Wear-Today
 Open index.html in your browser:
 
 No server setup required – this is a purely frontend app.
