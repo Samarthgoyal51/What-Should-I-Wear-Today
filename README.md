@@ -63,6 +63,7 @@ git clone https://github.com/Samarthgoyal51/What-Should-I-Wear-Today.git
 cd What-Should-I-Wear-Today
 
 ---
+```
 
 ## Open index.html in your browser.
 
