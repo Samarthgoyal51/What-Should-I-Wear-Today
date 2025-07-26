@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Should I Wear Today?</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    <span class="theme-icon"></span>
+  </button>
+
+  
+  <main id="app" class="app-container">
+    
+    <header class="app-header">
+      <div class="header-content">
+        <h1 class="app-title">
+          <span class="title-icon"></span>
+          What Should I Wear Today?
+        </h1>
+        <p class="app-subtitle">Get personalized outfit suggestions based on your local weather</p>
+      </div>
+    </header>
+
+    
+    <div id="status" class="status-section" aria-live="polite">
+      <div class="loading-spinner"></div>
+      <p class="status-text">Detecting your location</p>
+    </div>
+
+    
+    <div id="weather" class="weather-section" style="display: none;">
+      
+      <div class="weather-card">
+        <div class="weather-header">
+          <div class="weather-icon-container">
+            <span id="weather-icon" class="weather-icon"></span>
+          </div>
+          <div class="weather-info">
+            <div class="temperature-display">
+              <span class="temp-value"></span>
+              <span class="temp-unit">C</span>
+            </div>
+            <p class="weather-desc"></p>
+            <p id="location-name" class="location-name"></p>
+          </div>
+        </div>
+        
+       
+        <div class="weather-details">
+          <div class="detail-item">
+            <span class="detail-icon"></span>
+            <span class="detail-label">Wind</span>
+            <span id="wind-speed" class="detail-value">--</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon"></span>
+            <span class="detail-label">Humidity</span>
+            <span id="humidity" class="detail-value">--%</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon"></span>
+            <span class="detail-label">Visibility</span>
+            <span id="visibility" class="detail-value">-- km</span>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="outfit-card">
+        <h2 class="outfit-title">
+          <span class="outfit-icon"></span>
+          Outfit Suggestion
+        </h2>
+        <div class="suggestion-content">
+          <p class="main-suggestion"></p>
+          <div class="outfit-categories">
+            <div class="category-item">
+              <span class="category-icon"></span>
+              <span class="category-label">Top</span>
+              <span id="top-suggestion" class="category-suggestion">--</span>
+            </div>
+            <div class="category-item">
+              <span class="category-icon"></span>
+              <span class="category-label">Bottom</span>
+              <span id="bottom-suggestion" class="category-suggestion">--</span>
+            </div>
+            <div class="category-item">
+              <span class="category-icon"></span>
+              <span class="category-label">Outer</span>
+              <span id="outer-suggestion" class="category-suggestion">--</span>
+            </div>
+            <div class="category-item">
+              <span class="category-icon"></span>
+              <span class="category-label">Shoes</span>
+              <span id="shoes-suggestion" class="category-suggestion">--</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="action-buttons">
+        <button id="refresh" class="btn btn--primary btn--lg">
+          <span class="btn-icon"></span>
+          Refresh Weather
+        </button>
+        <button id="share" class="btn btn--outline btn--lg">
+          <span class="btn-icon"></span>
+          Share
+        </button>
+      </div>
+    </div>
+
+    
+    <div id="error-section" class="error-section" style="display: none;">
+      <div class="error-icon"></div>
+      <h3 class="error-title">Oops! Something went wrong</h3>
+      <p id="error-message" class="error-message"></p>
+      <div class="error-actions">
+        <button id="retry-btn" class="btn btn--primary">
+          <span class="btn-icon"></span>
+          Try Again
+        </button>
+        <button id="approx-btn" class="btn btn--secondary">
+          <span class="btn-icon"></span>
+          Use Approximate Location
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-content">
+      <p class="footer-credits">
+        Weather data by <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo.com</a>
+      </p>
+      <p class="footer-text">
+        Made by Samarth Goyal
+      </p>
+    </div>
+  </footer>
+
+  
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
