@@ -55,7 +55,7 @@ To run this project locally:
 
 ```bash
 git clone https://github.com/Samarthgoyal51/What-Should-I-Wear-Today.git
-cd What-Should-I-Wear-Today
+cd What-Should-I-Wear-Today```
 Open index.html in your browser:
 
 No server setup required – this is a purely frontend app.
