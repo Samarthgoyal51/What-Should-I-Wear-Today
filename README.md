@@ -1,45 +1,52 @@
-# What-Should-I-Wear-Today
-🌤️ A responsive web app that gives you personalized outfit suggestions based on real-time weather at your location. Built with HTML, CSS, and vanilla JS. Just open and dress smart! 👕🧥🌂
+# 👕 What Should I Wear Today?
 
-## 🌐 Live Demo
+**"What Should I Wear Today?"** is a responsive, weather-based clothing suggestion app that detects your current location, fetches real-time weather, and provides personalized outfit advice — all in a clean and minimal interface.
 
-👉 [Try the Website](https://what-should-i-wear-today-inky.vercel.app/)
+🌦️ Get dressed smarter. Not just by style, but by science.
 
 ---
 
-## 🧠 Features
+## 🚀 Live Demo
 
-- 🌍 **Automatic Location Detection** – Uses GPS or IP fallback to get your current location.
-- 🌦️ **Real-time Weather Data** – Integrates with [Open-Meteo](https://open-meteo.com) to get current conditions and hourly data.
-- 🧥 **Smart Outfit Suggestions** – Personalized recommendations for:
-  - Top
-  - Bottom
-  - Outer layer
+👉 [Try the App](https://what-should-i-wear-today-inky.vercel.app/))
+
+---
+
+## 🧩 Features
+
+- 🌍 **Location Detection** – Automatically finds your GPS location or uses IP-based fallback.
+- 🌦️ **Live Weather Forecast** – Powered by [Open-Meteo](https://open-meteo.com), providing accurate temperature, humidity, visibility, and windspeed.
+- 🧥 **Smart Outfit Suggestions** – Recommends:
+  - Tops
+  - Bottoms
+  - Outer layers
   - Shoes
-- 🌙 **Dark/Light Theme Toggle** – Smooth theme transitions with persistent settings.
-- 🔁 **Refresh & Retry Support** – Easily re-fetch weather or handle errors gracefully.
-- 📤 **Share or Copy Info** – Share your weather and outfit via Web Share API or clipboard fallback.
-- 📱 **Responsive Design** – Fully optimized for mobile and desktop experiences.
+- 🌓 **Dark / Light Mode Toggle** – Seamlessly switch themes with saved preferences.
+- ♻️ **Refresh & Retry Logic** – Handles location or network issues gracefully.
+- 📤 **Easy Sharing** – Share your weather and outfit info using native Web Share or clipboard copy.
+- 📱 **Responsive Design** – Works beautifully on mobile and desktop.
 
 ---
+
 
 ## 🛠️ Built With
 
-- **HTML5** – Semantic and accessible markup.
-- **CSS3** – Modular custom properties, responsive layout, dark mode.
-- **JavaScript (Vanilla)** – Fully functional front-end logic.
-- **Geolocation API** – Accurate location-based services.
-- **Open-Meteo API** – Free and reliable weather data provider.
+- **HTML5** – Semantic markup
+- **CSS3** – Custom properties, animations, responsive layout
+- **Vanilla JavaScript** – Modular, no frameworks
+- **Geolocation API** – For GPS-based location
+- **Open-Meteo API** – Free, reliable weather data
+- **IPAPI.co** – Approximate location fallback
 
 ---
 
-## 📁 File Structure
+## 🗂️ Project Structure
 
-📦 project-root
+📁 What-Should-I-Wear-Today
 ├── index.html # Main HTML structure
-├── style.css # Theming, layout, responsiveness
-├── app.js # JavaScript logic and interactivity
-└── README.md # You're here!
+├── style.css # Theming and layout styles
+├── app.js # Core application logic
+└── README.md # Project documentation
 
 yaml
 Copy
@@ -47,39 +54,36 @@ Edit
 
 ---
 
-## ⚙️ Getting Started
-
-To run this project locally:
+## 🔧 Getting Started
 
 1. **Clone the repository:**
 
 ```bash
 git clone https://github.com/Samarthgoyal51/What-Should-I-Wear-Today.git
-cd What-Should-I-Wear-Today```
-Open index.html in your browser:
+cd What-Should-I-Wear-Today
+Open index.html in your browser.
 
-No server setup required – this is a purely frontend app.
+No server setup is needed — it's a fully static frontend app.
 
-📦 Dependencies
-Open-Meteo API – Free weather API with no authentication required.
+📋 To-Do Ideas
+ Add Fahrenheit / Celsius toggle
 
-IPAPI.co – Used as a fallback for approximate location when geolocation fails.
+ Show upcoming weather trends
 
-Inter Font (Google Fonts) – Clean, modern typography.
+ Add images/icons for outfit suggestions
 
-🔐 Privacy Consideration
-This app uses your browser’s Geolocation API or IP-based lookup only for weather detection. No location data is stored or shared externally.
+ Save outfit history
 
-✨ Customization Ideas
-Add a map display of the location.
+ Enable PWA support
 
-Provide outfit image previews.
+🛡️ Privacy Note
+This app does not store or transmit your location.
 
-Include settings for unit preferences (Celsius/Fahrenheit).
+Geolocation is used only to fetch weather data locally in your browser.
 
-Integrate a wardrobe planner.
+🙌 Credits
+Weather API by Open-Meteo
 
-📣 Credits
-Weather data by Open-Meteo
+Location fallback via IPAPI.co
 
-UI design and development by Samarth Goyal
+Developed by Samarth Goyal
