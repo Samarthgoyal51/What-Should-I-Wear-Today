@@ -61,25 +61,20 @@ Edit
 ```bash
 git clone https://github.com/Samarthgoyal51/What-Should-I-Wear-Today.git
 cd What-Should-I-Wear-Today
+
+---
+
 Open index.html in your browser.
 
 No server setup is needed — it's a fully static frontend app.
-
-📋 To-Do Ideas
- Add Fahrenheit / Celsius toggle
-
- Show upcoming weather trends
-
- Add images/icons for outfit suggestions
-
- Save outfit history
-
- Enable PWA support
+---
 
 🛡️ Privacy Note
 This app does not store or transmit your location.
 
 Geolocation is used only to fetch weather data locally in your browser.
+
+---
 
 🙌 Credits
 Weather API by Open-Meteo
@@ -87,3 +82,4 @@ Weather API by Open-Meteo
 Location fallback via IPAPI.co
 
 Developed by Samarth Goyal
+---
