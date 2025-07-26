@@ -64,19 +64,19 @@ cd What-Should-I-Wear-Today
 
 ---
 
-Open index.html in your browser.
+## Open index.html in your browser.
 
 No server setup is needed — it's a fully static frontend app.
 ---
 
-🛡️ Privacy Note
+## 🛡️ Privacy Note
 This app does not store or transmit your location.
 
 Geolocation is used only to fetch weather data locally in your browser.
 
 ---
 
-🙌 Credits
+## 🙌 Credits
 Weather API by Open-Meteo
 
 Location fallback via IPAPI.co
